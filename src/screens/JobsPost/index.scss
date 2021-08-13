@@ -1,0 +1,96 @@
+$darkBlueColor:#303F60;
+$lightBlueColor:#EDF6FF;
+$littleDarkColor:#43AFFF;
+$whiteColor:#FFFFFF;
+
+@mixin pagenation{
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 2px 0px;
+}
+
+.jobsPost-container-first{
+    height:150px;
+    background-color: $darkBlueColor;
+}
+
+.jobsPost-container{
+    color:$whiteColor;
+    margin-left:180px;
+}
+
+.jobsPost-paragraph{
+    font-size: 11px;
+    margin-top: -18px;
+    margin-left: 20px;
+}
+
+.jobsPost-home{
+    margin-top: -31px;
+}
+
+.jobsPost-mainText{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.jobsPost-cards{
+    display:flex;
+    width: 90px;
+    height: 160px;
+    margin-top: 15px;
+}
+
+.jobsPost-container-second{
+    background-color:$lightBlueColor;
+    height:500px;
+    margin-top: 0px;
+}
+
+.noJob-container{
+    position: absolute;
+    top: 115%;
+    left: 40%;
+}
+
+.noJob-image{
+    margin-left: 50px;
+}
+
+.noJob-text{
+    font-size: 16px;
+    color: $darkBlueColor;
+    margin-top: -5px;
+}
+
+.noJob-button{
+    background-color: $littleDarkColor;
+    text-align: center;
+    margin-top: 8px;
+    border: 1px solid $littleDarkColor;
+    border-radius: 5px;
+    color: $whiteColor;
+    padding: 8px;
+    width:130px;
+    margin-left: 35px;
+}
+
+.jobsPost-pagenation-container{
+    display: flex;
+    position: absolute;
+    top: 700px;
+    left: 650px;
+}
+
+.jobsPost-pagenation-arrow{
+    @include pagenation();
+    border: 1px solid black;
+}
+
+.jobsPost-pagenation{
+    @include pagenation();
+    text-align: center;
+    background-color: $littleDarkColor;
+    border: 1px solid $littleDarkColor;
+}

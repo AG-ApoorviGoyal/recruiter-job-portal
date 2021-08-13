@@ -1,0 +1,81 @@
+$backgroundColor:#FFFFFF;
+$darkBlueColor:#303F60;
+$lightBlueColor:#EDF6FF;
+$littleDarkColor:#43AFFF;
+
+@mixin label{
+    font-size: 11px;
+    font-weight: 480;
+    display: flex;
+}
+
+.forgotPassword-container-first{
+    background-color: $darkBlueColor;
+    height:164px;
+}
+
+.forgotPassword-container{
+    background-color: $backgroundColor;
+    border: 1px solid $lightBlueColor;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-left:480px;
+    width:413px;
+    color:$darkBlueColor;
+    padding:10px 10px 10px 27px;
+    height:240px;
+    transform-style: preserve-3d;
+}
+
+.forgotPassword-main-text{
+    font-weight: 600;
+}
+
+.forgotPassword-paragraph-text{
+    font-size: 11px;
+}
+
+.forgotPassword-details{
+    margin-top:13px;
+}
+
+.forgotPassword-label{
+    @include label();
+}
+
+.forgotPassword-input{
+    background-color: $lightBlueColor;
+    border: 1px solid $littleDarkColor;
+    border-radius: 2px;
+    width:350px;
+    font-size: 10px;
+    margin-top: 5px;
+    padding:8px;
+}
+
+.forgotPassword-button{
+    background-color: $littleDarkColor;
+    text-align: center;
+    margin-top: 28px;
+    border: 1px solid $littleDarkColor;
+    border-radius: 5px;
+    color: $backgroundColor;
+    padding: 8px;
+    width:130px;
+    margin-left: 115px;
+}
+
+.forgotPassword-error-text{
+    margin-left: 270px;
+    font-size: 9px;
+    color: #FF0000;
+    margin-bottom: -13px;
+    width:300px;
+    box-sizing: content-box;
+}
+
+.forgotPassword-container-second{
+    background-color:$lightBlueColor;
+    height:500px;
+    margin-top: 0px;
+}

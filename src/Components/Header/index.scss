@@ -1,0 +1,88 @@
+$backgroundColor:#303F60;
+$darkBlueColor: #43AFFF33;
+
+@mixin commonColor {
+    color:#FFFFFF;
+}
+
+.header-container{
+    background-color:$backgroundColor;
+    height:140px;
+}
+
+.header-text{
+    padding:22px 70px;
+    width: 82px;
+    height: 26px;
+    display: inline-block;
+    margin-bottom: -18px;
+}
+
+.header-text-white{
+    @include commonColor();
+}
+
+.header-text-blue{
+    color:#43AFFF;
+}
+
+.header-button{
+    border:1px solid $darkBlueColor;
+    background-color: $darkBlueColor;
+    width:120px;
+    height: 41px;
+    border-radius: 5px;
+    position: relative;
+    left: 918px;
+    opacity: 1;
+}
+
+.header-button-text{
+    @include commonColor();
+    width: 102px;
+    height: 19px;
+}
+
+.header-border-line{
+    width:1220px;
+    @include commonColor();
+}
+
+.header-profile-text{
+    @include commonColor();
+    width: 78px;
+    font-size: 12px;
+    height: 18px;
+    margin-top: 8px;
+}
+
+.header-profile-container{
+    display:flex;
+    position: relative;
+    left: 1120px;
+    top: -48px;
+    margin-bottom: -45px;
+}
+
+.header-profile-button{
+    border:1px solid white;
+    border-radius: 50%;
+    height:33px;
+    width:33px;
+    margin-left: 10px;
+    background-color: #D9EFFF;
+}
+
+.header-profile-button-text{
+    text-align: center;
+}
+
+.header-profile-image{
+    width:20px;
+    height:20px;
+}
+
+.header-profile-image-button{
+    background-color: $backgroundColor;
+    border: 1px solid $backgroundColor;
+}

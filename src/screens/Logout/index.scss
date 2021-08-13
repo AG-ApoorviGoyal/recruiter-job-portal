@@ -1,0 +1,39 @@
+$whiteColor:#FFFFFF;
+$lightBlueColor:#43AFFF;
+$darkBlueColor:#303F60;
+
+.logout-container{
+    background-color: $whiteColor;
+    border: 1px solid $darkBlueColor;
+    border-radius: 5px;
+    width: 257px;
+    height: 67px;
+    position: fixed;
+    left:950px;
+    top:100px;
+    padding: 4px;
+    z-index: 4;
+}
+
+.logout-image{
+    position: absolute;
+    top:10px;
+    left:250px;
+}
+
+.logout-text{
+    margin-left: 13px;
+    margin-top: -8px;
+}
+
+.logout-heading{
+    color: $lightBlueColor;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.logout-paragraph{
+    color: $darkBlueColor;
+    font-size: 13px;
+    margin-top: -12px;
+}

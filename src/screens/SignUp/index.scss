@@ -1,0 +1,143 @@
+$backgroundColor:#FFFFFF;
+$darkBlueColor:#303F60;
+$lightBlueColor:#EDF6FF;
+$littleDarkColor:#43AFFF;
+$lightBrownColor:#E8E8E833;
+$darkBrownColor:#C6C6C6;
+
+@mixin buttonStyles{
+    border: 1px solid $darkBrownColor;
+    border-radius: 2px;
+    width:120px;
+    height:40px;
+    margin-right: 10px;
+}
+
+@mixin input{
+    background-color: $lightBlueColor;
+    border: 1px solid $littleDarkColor;
+    border-radius: 2px;
+    font-size: 10px;
+    margin-top: 5px;
+    padding:8px;
+}
+
+@mixin errorText{
+    font-size: 9px;
+    color: #FF0000;
+    margin-bottom: -13px;
+    width:300px;
+    box-sizing: content-box;
+}
+
+.signup-container-first{
+    background-color: $darkBlueColor;
+    height:350px;
+}
+
+.signup-container{
+    background-color: $backgroundColor;
+    border: 1px solid $lightBlueColor;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-left:480px;
+    width:423px;
+    color:$darkBlueColor;
+    padding:10px 10px 10px 27px;
+    height:500px;
+    transform-style: preserve-3d;
+}
+
+.signup-main-text{
+    font-weight: 600;
+}
+
+.signup-paragraph-text{
+    font-size: 11px;
+}
+
+.signup-button-styles{
+    display: flex;
+}
+
+.signup-first-button{
+    background-color: $littleDarkColor;
+    @include buttonStyles();
+}
+
+.signup-second-button{
+    background-color: $lightBrownColor;
+    @include buttonStyles();
+}
+
+.signup-button-image{
+    margin: 12px 9px 0px -77px;
+}
+
+.signup-button-image-text{
+    margin-top: -21px;
+}
+
+.signup-details{
+    margin-top: 12px;
+}
+
+.signup-label{
+    font-size: 11px;
+    font-weight: 480;
+    display: flex;
+}
+
+.signup-input-second{
+    @include input();
+    width:158px;
+    margin-right: 14px;
+}
+
+.signup-details-second{
+    display: flex;
+    margin-top: 6px;
+}
+
+.signup-input{
+    @include input();
+    width:350px;
+}
+
+.signup-container-second{
+    background-color:$lightBlueColor;
+    height:500px;
+    margin-top: -138px;
+}
+
+.signup-button{
+    background-color: $littleDarkColor;
+    text-align: center;
+    margin-top: 28px;
+    border: 1px solid $littleDarkColor;
+    border-radius: 5px;
+    color: $backgroundColor;
+    padding: 8px;
+    width:130px;
+    margin-left: 115px;
+}
+
+.signup-text-button{
+    font-size: 12px;
+    margin-left: 118px;
+    margin-top: 13px;
+}
+
+.signup-text-blue{
+    color: $littleDarkColor;
+}
+
+.signup-error-text{
+    @include errorText();
+    margin-left: 270px;
+}
+
+.signup-error-text-second{
+    @include errorText();
+    margin-left: 80px;
+}

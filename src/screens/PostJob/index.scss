@@ -1,0 +1,100 @@
+$darkBlueColor:#303F60;
+$lightBlueColor:#EDF6FF;
+$whiteColor:#FFFFFF;
+$littleDarkColor:#43AFFF;
+
+@mixin input{
+    background-color: $lightBlueColor;
+    border: 1px solid $littleDarkColor;
+    border-radius: 2px;
+    width:350px;
+    font-size: 10px;
+    margin-top: 5px;
+    padding:8px;
+}
+
+.postJob-container-first{
+    background-color: $darkBlueColor;
+    height: 187px;
+}
+
+.postJob-paragraph{
+    font-size: 11px;
+    margin-top: -18px;
+    margin-left: 20px;
+    color: $whiteColor;
+}
+
+.postJob-home{
+    margin-top: -31px;
+    margin-left: 230px;
+}
+
+.postJob-container{
+    background-color: $whiteColor;
+    border: 1px solid $lightBlueColor;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-left:480px;
+    color:$darkBlueColor;
+    width:423px;
+    padding:10px 10px 10px 27px;
+    height:378px;
+    transform-style: preserve-3d;
+}
+
+.postJob-main-text{
+    font-weight: 600;
+}
+
+.postJob-label{
+    font-size: 11px;
+    font-weight: 480;
+    display: flex;
+    margin-top: 12px;
+}
+
+.postJob-input{
+    @include input();
+}
+
+.postJob-input-second{
+    @include input();
+    height:68px;
+}
+
+.postJob-error-text{
+    font-size: 9px;
+    color: #FF0000;
+    margin-left: 260px;
+    margin-bottom: -13px;
+    width:300px;
+    box-sizing: content-box;
+}
+
+.postJob-button{
+    background-color: $littleDarkColor;
+    text-align: center;
+    margin-top: 28px;
+    border: 1px solid $littleDarkColor;
+    border-radius: 5px;
+    color: $whiteColor;
+    padding: 8px;
+    width:130px;
+    margin-left: 115px;
+}
+
+.postJob-container-second{
+    background-color:$lightBlueColor;
+    height:400px;
+    margin-top: 0px;
+}
+
+.postJob-border-line{
+    background-color: #43AFFF;
+    width: 50px;
+    top: 81px;
+    height: 5px;
+    left: 1022px;
+    position: absolute;
+}

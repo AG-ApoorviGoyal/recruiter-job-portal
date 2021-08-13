@@ -1,0 +1,97 @@
+$backgroundColor:#FFFFFF;
+$darkBlueColor:#303F60;
+$lightBlueColor:#EDF6FF;
+$littleDarkColor:#43AFFF;
+
+@mixin label{
+    font-size: 10px;
+    font-weight: 480;
+    display: flex;
+}
+
+.login-container-first{
+    background-color: $darkBlueColor;
+    height:154px;
+}
+
+.login-container{
+    background-color: $backgroundColor;
+    border: 1px solid $lightBlueColor;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-left:480px;
+    color:$darkBlueColor;
+    width:423px;
+    padding:10px 10px 10px 27px;
+    height:290px;
+    transform-style: preserve-3d;
+}
+
+.login-main-text{
+    font-weight: 600;
+}
+
+.login-label{
+    @include label();
+}
+
+.login-label-second{
+    @include label();
+    color:$littleDarkColor;
+    box-sizing: content-box;
+    width:300px;
+    margin-top: 0px;
+    margin-left: -120px;
+}
+
+.login-input{
+    background-color: $lightBlueColor;
+    border: 1px solid $littleDarkColor;
+    border-radius: 2px;
+    width:350px;
+    font-size: 10px;
+    margin-top: 5px;
+    padding:8px;
+}
+
+.login-container-second{
+    background-color:$lightBlueColor;
+    height:400px;
+    margin-top: -138px;
+}
+
+.login-password-styles{
+    display: flex;
+    margin-top:13px;
+}
+
+.login-button{
+    background-color: $littleDarkColor;
+    text-align: center;
+    margin-top: 28px;
+    border: 1px solid $littleDarkColor;
+    border-radius: 5px;
+    color: $backgroundColor;
+    padding: 8px;
+    width:130px;
+    margin-left: 115px;
+}
+
+.login-text-button{
+    font-size: 12px;
+    margin-left: 87px;
+    margin-top: 20px;
+}
+
+.login-text-blue{
+    color: $littleDarkColor;
+}
+
+.login-error-text{
+    font-size: 9px;
+    color: #FF0000;
+    margin-left: 240px;
+    margin-bottom: -13px;
+    width:300px;
+    box-sizing: content-box;
+}

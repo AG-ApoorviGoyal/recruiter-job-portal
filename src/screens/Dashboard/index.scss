@@ -1,0 +1,107 @@
+$backgroundColor:#303F60;
+$secondBackgroundColor:#EDF6FF;
+$lightBlueColor:#43AFFF;
+
+@mixin commonColor {
+    color:#FFFFFF;
+}
+
+@mixin size{
+    width:100%; 
+    height:100%;
+}
+
+@mixin dashboardCardHeading {
+    font-size: 16px;
+    font-weight: bold;        
+}
+.dashboard-container{
+    background-color: $backgroundColor;
+    height:300px;
+    display: flex;
+}
+
+.dashboard-text{
+    position:relative;
+    top:-90px;
+    padding:140px 200px;
+    font-size: 45px;
+    box-sizing: content-box;
+    width:280px;
+}
+
+.dashboard-text-white{
+    @include commonColor();
+}
+
+.dashboard-text-blue{
+    color:$lightBlueColor;
+}
+
+.dashboard-button{
+    padding:10px;
+    background-color: $lightBlueColor;
+    border: 1px solid $lightBlueColor;
+    width:115px;
+    @include commonColor();
+    border-radius: 5px;
+}
+
+.dashboard-image{
+    border:1px solid $secondBackgroundColor;
+    border-radius: 5px;
+    margin-left: -80px;
+    height: 330px;
+    z-index: 2;
+}
+
+.dashboard-image-styles{
+    object-fit:contain; 
+    @include size();
+}
+
+.dashboard-image-styles-second{
+    object-fit:cover; 
+    @include size();
+}
+.dashboard-secondContainer{
+    background-color: $secondBackgroundColor;
+    height:800px;
+    margin-top: -16px;
+}
+
+.dashboard-card-heading-first{
+    padding: 110px 10px 10px 315px;
+    @include dashboardCardHeading();
+}
+
+.dashboard-card-heading-second{
+    padding: 69px 10px 30px 315px;
+    @include dashboardCardHeading();
+}
+
+.dashboard-cards-container{
+    display: flex;
+    border: 1px solid $secondBackgroundColor;
+    box-sizing: content-box;
+    width:600px;
+    height:150px;
+    padding: 5px 10px 10px 315px;
+}
+
+.dashboard-card-image-first{
+    margin-left: 318px;
+    display: flex;
+}
+
+.dashboard-card-image-second{
+    margin-left: 390px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.dashboard-image1{
+    width:118px; 
+    height:37px;
+    margin-right: 70px;
+}
